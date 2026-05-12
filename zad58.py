@@ -143,7 +143,7 @@ plt.ylabel("Predicted mpg")
 plt.title("Year Category")
 
 plt.tight_layout()
-plt.show()
+plt.savefig("58.png")
 
 # =========================================================
 # Liczba poziomów zmiennej year

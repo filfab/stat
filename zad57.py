@@ -74,18 +74,21 @@ y_vals = (
 plt.plot(x_vals, y_vals)
 
 plt.title("mpg vs horsepower")
-plt.show()
+
+plt.savefig(f"57-1.png")
 
 # =========================================================
 # Diagnostyka reszt
 # =========================================================
 
 fig = sm.graphics.plot_regress_exog(model1, "horsepower")
-plt.show()
+
+plt.savefig(f"57-2.png")
 
 sm.qqplot(model1.resid, line="45")
 plt.title("QQ Plot")
-plt.show()
+
+plt.savefig(f"57-3.png")
 
 # =========================================================
 # (b) Różne modele
@@ -166,11 +169,13 @@ fig = sm.graphics.plot_regress_exog(
     "horsepower"
 )
 
-plt.show()
+
+plt.savefig(f"57-3.png")
 
 sm.qqplot(model6.resid, line="45")
 plt.title("QQ Plot - Model 6")
-plt.show()
+
+plt.savefig(f"57-4.png")
 
 # =========================================================
 # (c) Błąd generalizacji
@@ -226,4 +231,5 @@ plt.plot(
     [valid["mpg"].min(), valid["mpg"].max()]
 )
 
-plt.show()
+
+plt.savefig(f"57-5.png")

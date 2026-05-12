@@ -20,9 +20,9 @@ epsilons = [
 # plt.xlabel("x")
 # plt.ylabel("y")
 # plt.title("Scatterplot of x and y")
-# plt.show()
+# 
 
-for eps, i in enumerate(epsilons):
+for i, eps in enumerate(epsilons):
     y = -1 + 0.5 * x + eps
 
     # (E)
@@ -45,7 +45,8 @@ for eps, i in enumerate(epsilons):
     plt.legend()
     plt.xlabel("x")
     plt.ylabel("y")
-    plt.show()
+    
+    plt.savefig(f"55-{i}.png")
 
     # (G)
     X_poly = np.column_stack((x, x**2))

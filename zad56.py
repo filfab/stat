@@ -16,7 +16,8 @@ print("korelacja x1 x2: ", np.corrcoef(x1, x2))
 plt.scatter(x1, x2)
 plt.xlabel("x1")
 plt.ylabel("x2")
-plt.show()
+
+plt.savefig("56.png")
 
 # (C)
 X = np.column_stack((x1, x2))
